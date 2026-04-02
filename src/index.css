@@ -11,27 +11,27 @@
 
 @layer base {
   body {
-    @apply bg-surface font-serif text-text;
+    @apply font-serif bg-surface text-text;
   }
 
   h1 {
-    @apply text-5xl leading-tight;
+    @apply text-6xl leading-tight;
   }
 
   h2 {
-    @apply text-4xl leading-tight;
+    @apply text-5xl leading-tight;
   }
 
   h3 {
-    @apply text-3xl leading-snug;
+    @apply text-4xl leading-snug;
   }
 
   h4 {
-    @apply text-2xl leading-snug;
+    @apply text-3xl leading-snug;
   }
 
   h5 {
-    @apply text-xl leading-snug;
+    @apply text-2xl leading-snug;
   }
 
   h6 {
@@ -48,7 +48,28 @@
 }
 
 @layer components {
-  .container{
-    @apply px-2 md:px-10 mx-auto;
+  .container {
+    @apply mx-auto px-2 md:px-30;
+  }
+
+  .btn {
+    @apply px-4 py-2 rounded-md font-medium cursor-pointer;
+  }
+
+  .btn--primary {
+    @apply bg-primary text-white hover:bg-primary hover:shadow-lg hover:-translate-y-[2px] transition-all duration-300;
+  }
+
+  .btn--secondary {
+    @apply border border-secondary bg-transparent text-secondary hover:bg-secondary hover:text-white hover:shadow-lg hover:-translate-y-[2px] transition-all duration-300;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0px 1px 3px var(--color-text);
+  }
+  .box-shadow{
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   }
 }
