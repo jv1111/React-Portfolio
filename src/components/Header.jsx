@@ -13,7 +13,7 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <header className='bg-surface shadow p-2'>
+    <header className='bg-surface shadow p-2 sticky top-0 z-30'>
       <div className="container">
         <div className='flex justify-between items-center'>
           <div className='flex gap-3 items-center justify-center'>
@@ -23,16 +23,24 @@ function Header() {
             <h6 className='text-primary'>Jeremy Viterbo</h6>
           </div>
 
-          <nav className={`items-center justify-center absolute left-0 top-18 z-10 w-screen bg-surface shadow overflow-hidden transition-all duration-500 md:static md:w-auto md:overflow-visible md:shadow-none ${isOpen ? 'max-h-96' : 'max-h-0'} md:max-h-none`} aria-label="Primary">
+          <nav className={`items-center justify-center absolute left-0 top-16 z-50 w-screen bg-surface shadow overflow-hidden transition-all duration-500 md:static md:w-auto md:overflow-visible md:shadow-none ${isOpen ? 'max-h-96' : 'max-h-0'} md:max-h-none`} aria-label="Primary">
             <ul className="mt-5 pb-5 flex flex-col items-center justify-center gap-5 md:mt-0 md:flex-row md:pb-0">
               {navItems.map((item) => (
                 <li key={item.to}>
                   <NavLink
                     to={item.to}
-                    className={({ isActive }) => `transition-colors duration-500 hover:text-primary ${isActive ? 'text-primary' : ''}`}
+                    className={({ isActive }) => {
+                      const activeClass = isActive ? 'text-primary' : '';
+                      return `group relative transition-colors duration-500 hover:text-primary ${activeClass}`;
+                    }}
                     onClick={() => setIsOpen(false)}
                   >
-                    {item.label}
+                    {({ isActive }) => (
+                      <>
+                        {item.label}
+                        <span className={`absolute bottom-0 left-0 h-0.5 bg-current transition-all duration-300 ${isActive ? 'w-full' : 'w-0'}`} />
+                      </>
+                    )}
                   </NavLink>
                 </li>
               ))}
@@ -47,6 +55,12 @@ function Header() {
           </button>
         </div>
       </div>
+
+      {/* Mobile nav overlay */}
+      <div
+        className={`fixed top-16 inset-x-0 bottom-0 bg-black/30 backdrop-blur-sm z-20 md:hidden transition-opacity duration-300 ${isOpen ? 'opacity-100' : 'opacity-0'}`}
+        onClick={() => setIsOpen(false)}
+      />
     </header>
   )
 }
