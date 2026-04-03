@@ -1,7 +1,12 @@
-import Hero from '../components/Hero'
+import { Hero, SkillPreview } from '../components'
 
 function Home() {
-  return <Hero />
+  return (
+    <>
+      <Hero />
+      <SkillPreview />
+    </>
+  )
 }
 
 export default Home
