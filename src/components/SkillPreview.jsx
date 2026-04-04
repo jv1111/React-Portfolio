@@ -21,8 +21,8 @@ const skillCards = [
 
 const SkillPreview = () => {
     return (
-        <section className='bg-secondary-surface'>
-            <div className="container flex flex-col gap-7 py-10 md:py-15">
+        <section className='bg-secondary-surface py-16 md:py-15'>
+            <div className="container flex flex-col gap-10 md:gap-7 ">
                 <h3 className='text-primary text-center md:text-start'>Skills Preview</h3>
                 {/* cards container */}
                 <div className='flex flex-wrap flex-col md:flex-row gap-5 items-center justify-center'>
