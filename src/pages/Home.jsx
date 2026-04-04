@@ -1,4 +1,4 @@
-import { Hero, SkillPreview, ProjectsPreview } from '../components'
+import { Hero, SkillPreview, ProjectsPreview, CTA } from '../components'
 
 function Home() {
   return (
@@ -6,6 +6,7 @@ function Home() {
       <Hero />
       <SkillPreview />
       <ProjectsPreview />
+      <CTA/>
     </div>
   )
 }
