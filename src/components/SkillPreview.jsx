@@ -23,7 +23,7 @@ const SkillPreview = () => {
     return (
         <section className='bg-secondary-surface py-16 md:py-15'>
             <div className="container flex flex-col gap-10 md:gap-9 ">
-                <h3 className='text-primary text-center md:text-start'>Skills Preview</h3>
+                <h2 className='text-primary text-center md:text-start'>Skills Preview</h2>
                 {/* cards container */}
                 <div className='flex flex-wrap flex-col md:flex-row gap-10 items-center justify-center pb-6'>
                     {skillCards.map((card) => (

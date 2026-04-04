@@ -24,8 +24,8 @@ const ProjectsPreview = () => {
         <section className='p-16 md:p-15'>
             <div className='container flex flex-col gap-10 md:gap-9'>
                 {/* title */}
-                <div className='max-w-80'>
-                    <h3 className='text-primary'>Projects Preview</h3>
+                <div className='max-w-90'>
+                    <h2 className='text-primary'>Projects Preview</h2>
                     <small className='mt-2 text-secondary'>Explore my recent work, featuring applications and systems I’ve designed and developed.</small>
                 </div>
 

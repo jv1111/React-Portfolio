@@ -17,7 +17,7 @@ function Header() {
       <div className="container">
         <div className='flex justify-between items-center'>
           <div className='flex gap-3 items-center justify-center'>
-            <div className="flex items-center justify-center rounded-full w-12 h-12">
+            <div className="flex items-center justify-center rounded-full w-15 h-15">
               <img src={profileImage} alt="Profile" className="w-full h-full object-cover rounded-full" />
             </div>
             <h6 className='text-primary'>Jeremy Viterbo</h6>
@@ -58,7 +58,7 @@ function Header() {
 
       {/* Mobile nav overlay */}
       <div
-        className={`fixed top-16 inset-x-0 bottom-0 bg-black/30 backdrop-blur-sm z-20 md:hidden transition-opacity duration-300 ${isOpen ? 'opacity-100' : 'opacity-0'}`}
+        className={`fixed inset-x-0 bottom-0 bg-black/30 backdrop-blur-sm z-20 md:hidden transition-opacity duration-300 ${isOpen ? 'opacity-100 top-16' : 'opacity-0 top-full'}`}
         onClick={() => setIsOpen(false)}
       />
     </header>
