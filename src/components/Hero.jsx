@@ -9,7 +9,7 @@ function Hero() {
     ];
 
     return (
-        <section className="flex flex-col items-center justify-center h-fit py-30 md:py-16">
+        <section className="flex flex-col items-center justify-center h-screen">
             <div className="container gap-10 grid items-center text-center md:text-left md:grid-cols-2">
                 <div className='flex flex-col items-center justify-center md:h-auto md:items-start md:justify-start md:order-1 order-2'>
                     <h1 className="animate-fade-in-up">
