@@ -27,27 +27,29 @@ const Footer = () => {
 
   return (
     <footer className="p-2 bg-black text-secondary-light">
-      <div className="container flex flex-col lg:flex-row gap-5 items-center justify-between">
-        {/* Left — Social Icons */}
-        <div className="flex flex-row gap-2">
-          {socialLinks.map(({ href, label, icon, external }) => (
-            <a
-              key={label}
-              href={href}
-              target={external ? "_blank" : undefined}
-              rel={external ? "noopener noreferrer" : undefined}
-              aria-label={label}
-            >
-              <FontAwesomeIcon icon={icon} size="xl" />
-            </a>
-          ))}
+      <div className="container">
+        <div className="wrapper flex flex-col lg:flex-row gap-5 items-center justify-between">
+          {/* Left — Social Icons */}
+          <div className="flex flex-row gap-2">
+            {socialLinks.map(({ href, label, icon, external }) => (
+              <a
+                key={label}
+                href={href}
+                target={external ? "_blank" : undefined}
+                rel={external ? "noopener noreferrer" : undefined}
+                aria-label={label}
+              >
+                <FontAwesomeIcon icon={icon} size="xl" />
+              </a>
+            ))}
+          </div>
+
+          {/* Center — Address */}
+          <p>123 Main Street, Calabarzon, Philippines</p>
+
+          {/* Right — Name */}
+          <p>Juan dela Cruz</p>
         </div>
-
-        {/* Center — Address */}
-        <p>123 Main Street, Calabarzon, Philippines</p>
-
-        {/* Right — Name */}
-        <p>Juan dela Cruz</p>
       </div>
     </footer>
   );
