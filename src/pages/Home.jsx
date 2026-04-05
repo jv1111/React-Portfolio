@@ -1,14 +1,14 @@
-import { Hero, SkillPreview, ProjectsPreview, CTA } from '../components'
+import { Hero, SkillPreview, ProjectsPreview, CTA } from "../components";
 
 function Home() {
   return (
-    <div className='flex flex-col'>
+    <div className="flex flex-col">
       <Hero />
       <SkillPreview />
       <ProjectsPreview />
-      <CTA/>
+      <CTA />
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;
