@@ -9,7 +9,7 @@ function Hero() {
   ];
 
   return (
-    <section className="flex flex-col items-center justify-center h-screen min-h-fit py-10">
+    <section className="flex flex-col items-center justify-center p-16 md:p-15 h-screen min-h-fit">
       <div className="container">
         <div className="wrapper grid items-center text-center md:text-left md:grid-cols-2">
           <div className="flex flex-col items-center justify-center md:h-auto md:items-start md:justify-start md:order-1 order-2">

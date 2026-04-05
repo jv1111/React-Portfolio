@@ -26,7 +26,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="p-2 bg-black text-secondary-light">
+    <footer className="px-16 md:px-15 py-5 bg-black text-secondary-light">
       <div className="container">
         <div className="wrapper flex flex-col lg:flex-row gap-5 items-center justify-between">
           {/* Left — Social Icons */}
@@ -45,7 +45,7 @@ const Footer = () => {
           </div>
 
           {/* Center — Address */}
-          <p>123 Main Street, Calabarzon, Philippines</p>
+          <p>Nagcarlan, Laguna, Philippines</p>
 
           {/* Right — Name */}
           <p>Juan dela Cruz</p>

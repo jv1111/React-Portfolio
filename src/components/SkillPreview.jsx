@@ -24,7 +24,7 @@ const skillCards = [
 
 const SkillPreview = () => {
   return (
-    <section className="bg-secondary-surface py-16 md:py-15">
+    <section className="p-16 md:p-15 bg-secondary-surface">
       <div className="wrapper">
         <div className="container flex flex-col gap-10 md:gap-9 ">
           <h2 className="text-primary text-center md:text-start">
@@ -35,7 +35,7 @@ const SkillPreview = () => {
             {skillCards.map((card) => (
               <div
                 key={card.title}
-                className="flex flex-col max-w-64 gap-3 text-center rounded-md border px-2 py-5 border-white bg-black/50 shadow-md"
+                className="flex flex-col max-w-64 min-h-76 gap-3 text-center rounded-md border px-2 py-5 border-white bg-black/50 shadow-md"
               >
                 {/* upper */}
                 <div className="flex flex-col items-center justify-center border-b pb-3 border-white text-white">

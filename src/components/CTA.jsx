@@ -3,8 +3,8 @@ import React from "react";
 const CTA = () => {
   return (
     <section className="bg-primary py-6">
-      <div className="container flex flex-col gap-2 items-center text-center text-text">
-        <div className="wrapper">
+      <div className="container">
+        <div className="wrapper flex flex-col gap-2 items-center text-center text-text">
           <h2 className="text-2xl">Get in touch</h2>
           <p>
             Let’s build innovative solutions together. Get in touch to discuss
