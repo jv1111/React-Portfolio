@@ -30,15 +30,15 @@
   }
 
   .btn {
-    @apply px-4 py-2 rounded-md font-medium cursor-pointer;
+    @apply px-4 py-2 rounded-md font-medium cursor-pointer hover:-translate-y-0.5;
   }
 
   .btn--primary {
-    @apply bg-primary text-white hover:bg-primary hover:shadow-lg hover:-translate-y-[2px] transition-all duration-300;
+    @apply bg-primary text-white hover:bg-primary hover:shadow-lg transition-all duration-300;
   }
 
   .btn--secondary {
-    @apply border border-secondary bg-transparent text-secondary hover:bg-secondary hover:text-white hover:shadow-lg hover:-translate-y-[2px] transition-all duration-300;
+    @apply border border-secondary bg-transparent text-secondary hover:bg-secondary hover:text-white hover:shadow-lg transition-all duration-300;
   }
 }
 
