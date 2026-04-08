@@ -2,6 +2,7 @@
 
 @theme {
   --color-primary: #ff6600;
+  --color-primary-darker: #ba3b00;
   --color-secondary: #484848;
   --color-text: #000000;
   --color-surface: #faf9f5;
@@ -34,15 +35,15 @@
   }
 
   .btn {
-    @apply px-4 py-2 rounded-md font-medium cursor-pointer hover:-translate-y-0.5;
+    @apply px-4 py-2 rounded-md font-medium cursor-pointer duration-400 hover:scale-105;
   }
 
   .btn--primary {
-    @apply bg-primary text-white hover:bg-primary hover:shadow-lg transition-all duration-300;
+    @apply bg-primary text-white duration-400 hover:bg-secondary hover:text-primary hover:border-primary hover:shadow-lg;
   }
 
   .btn--secondary {
-    @apply border border-secondary bg-transparent text-secondary hover:bg-secondary hover:text-white hover:shadow-lg transition-all duration-300;
+    @apply border border-secondary bg-transparent text-secondary duration-400 hover:bg-secondary hover:text-primary hover:border-primary hover:shadow-lg;
   }
 }
 

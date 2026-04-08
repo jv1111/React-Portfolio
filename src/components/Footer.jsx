@@ -33,6 +33,7 @@ const Footer = () => {
           <div className="flex flex-row gap-2">
             {socialLinks.map(({ href, label, icon, external }) => (
               <a
+                className="duration-400 hover:text-primary hover:scale-115"
                 key={label}
                 href={href}
                 target={external ? "_blank" : undefined}

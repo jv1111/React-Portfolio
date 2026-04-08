@@ -35,10 +35,10 @@ const SkillPreview = () => {
             {skillCards.map((card) => (
               <div
                 key={card.title}
-                className="flex flex-col max-w-64 min-h-76 gap-3 text-center rounded-md border px-2 py-5 border-white bg-black/50 shadow-md"
+                className="group flex flex-col max-w-64 min-h-76 gap-3 text-center rounded-md border px-2 py-5 border-white bg-black/50 shadow-md duration-400 select-none cursor-pointer hover:-translate-y-1 hover:scale-105 hover:border-primary"
               >
                 {/* upper */}
-                <div className="flex flex-col items-center justify-center border-b pb-3 border-white text-white">
+                <div className="flex flex-col items-center justify-center border-b pb-3 border-white text-white duration-400 group-hover:border-primary group-hover:text-primary">
                   <Icon
                     className="mb-5"
                     icon={card.icon}
@@ -48,7 +48,7 @@ const SkillPreview = () => {
                   <h6>{card.title}</h6>
                 </div>
                 {/* lower */}
-                <div className="text-secondary-light">
+                <div className="text-secondary-light duration-400 group-hover:text-primary">
                   <p>{card.description}</p>
                 </div>
               </div>

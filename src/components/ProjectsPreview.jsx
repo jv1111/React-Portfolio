@@ -40,19 +40,19 @@ const ProjectsPreview = () => {
           <div className="flex flex-wrap flex-col md:flex-row gap-10 items-center justify-center pb-6 ">
             {projects.map((project, index) => (
               <div
-                className="flex flex-col max-w-64 text-center rounded-md overflow-hidden border border-white bg-black/50 shadow-md"
+                className="group flex flex-col max-w-64 text-center rounded-md overflow-hidden border border-white bg-black/50 shadow-md duration-400 select-none cursor-pointer hover:-translate-y-1 hover:scale-105 hover:border-primary"
                 key={index}
               >
                 {/* upper */}
                 <div>
                   <img
-                    className="h-40 w-screen object-cover border-b border-white"
+                    className="h-40 w-screen object-cover border-b border-white duration-400 group-hover:border-primary"
                     src={project.image}
                     alt=""
                   />
                 </div>
                 {/* lower */}
-                <div className="px-2 py-5 text-secondary-light">
+                <div className="px-2 py-5 text-secondary-light duration-400 group-hover:text-primary group-hover:bg-black/50">
                   <h6>{project.title}</h6>
                   <p>{project.description}</p>
                 </div>
