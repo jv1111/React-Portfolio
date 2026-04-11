@@ -1,5 +1,6 @@
 import React from "react";
 import tempImage from "../assets/profile.webp";
+import useIntersectionObserver from "../hooks/useIntersectionObserver";
 
 const ProjectsPreview = () => {
   const projects = [
@@ -23,6 +24,8 @@ const ProjectsPreview = () => {
     },
   ];
 
+  const [setRef, visibleStates] = useIntersectionObserver(projects.length);
+
   return (
     <section className="p-16 md:p-15">
       <div className="container">
@@ -40,8 +43,10 @@ const ProjectsPreview = () => {
           <div className="flex flex-wrap flex-col md:flex-row gap-10 items-center justify-center pb-6 ">
             {projects.map((project, index) => (
               <div
-                className="group flex flex-col max-w-64 text-center rounded-md overflow-hidden border border-white bg-black/50 shadow-md duration-400 select-none cursor-pointer hover:-translate-y-1 hover:scale-105 hover:border-primary"
+                className={`group flex flex-col max-w-64 text-center rounded-md overflow-hidden border border-white bg-black/50 shadow-md duration-400 select-none cursor-pointer hover:-translate-y-1 hover:scale-105 hover:border-primary opacity-0 -translate-x-8 ${visibleStates[index] ? `animate-fade-in-up ${index > 0 ? `animation-delay-${index * 200}` : ""}` : ""}`}
                 key={index}
+                ref={setRef(index)}
+                data-index={index}
               >
                 {/* upper */}
                 <div>

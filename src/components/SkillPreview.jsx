@@ -1,5 +1,6 @@
 import React from "react";
 import { Icon } from "@iconify/react";
+import useIntersectionObserver from "../hooks/useIntersectionObserver";
 
 const skillCards = [
   {
@@ -50,6 +51,8 @@ const skillsList = [
 ];
 
 const SkillPreview = () => {
+  const [setRef, visibleStates] = useIntersectionObserver(skillCards.length);
+
   return (
     <section className="md:px-15 bg-secondary-surface">
       <div className="container">
@@ -60,10 +63,12 @@ const SkillPreview = () => {
             </h2>
             {/* cards container */}
             <div className="flex flex-wrap flex-col gap-10 justify-center items-center md:ps-20 pb-6">
-              {skillCards.map((card) => (
+              {skillCards.map((card, index) => (
                 <div
                   key={card.title}
-                  className="group flex max-w-130 items-center gap-3 rounded-md border border-white bg-black/50 px-2 py-5 shadow-md duration-400 select-none cursor-pointer hover:-translate-y-1 hover:scale-105 hover:border-primary animate-slide-in-left"
+                  ref={setRef(index)}
+                  data-index={index}
+                  className={`group flex max-w-130 items-center gap-3 rounded-md border border-white bg-black/50 px-2 py-5 shadow-md duration-400 select-none cursor-pointer hover:-translate-y-1 hover:scale-105 hover:border-primary opacity-0 -translate-x-8 ${visibleStates[index] ? `animate-slide-in-left ${index > 0 ? `animation-delay-${index * 200}` : ""}` : ""}`}
                 >
                   {/* left */}
                   <div className="flex w-25 h-25 items-center justify-center text-white duration-400 group-hover:text-primary">
