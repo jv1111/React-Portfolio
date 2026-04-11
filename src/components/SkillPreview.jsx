@@ -31,10 +31,10 @@ const SkillPreview = () => {
                   <div className="h-25 w-1 rounded-sm bg-white duration-400 group-hover:bg-primary" />
                   {/* right */}
                   <div className="flex-1 flex flex-col gap-2 justify-center text-start">
-                    <h6 className="text-white duration-400 group-hover:text-primary">
+                    <h3 className="text-base text-white duration-400 group-hover:text-primary">
                       {card.title}
-                    </h6>
-                    <div className="text-secondary-light text-sm duration-400 group-hover:text-primary">
+                    </h3>
+                    <div className="text-sm font-extralight text-secondary-light duration-400 group-hover:text-primary">
                       <p>{card.description}</p>
                     </div>
                   </div>

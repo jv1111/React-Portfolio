@@ -13,7 +13,7 @@ function Hero() {
       <div className="container">
         <div className="wrapper grid items-center text-center md:text-left md:grid-cols-2">
           <div className="flex flex-col items-center justify-center md:h-auto md:items-start md:justify-start md:order-1 order-2">
-            <h1 className="animate-fade-in-up text-3xl md:text-4xl xl:text-6xl xl:text-start">
+            <h1 className="animate-fade-in-up text-3xl md:text-3xl xl:text-5xl xl:text-start">
               <span className="text-shadow text-text">Hi I'm </span>
               <span className="text-primary text-shadow animate-fade-in-up animation-delay-200">
                 Jeremy
@@ -22,12 +22,12 @@ function Hero() {
 
             <div className="flex flex-col xl:flex-row items-center md:items-start xl:items-center gap-4 mt-3 animate-fade-in-up animation-delay-400">
               <div className="bg-text border-2 border-primary h-2.5 w-45 rounded-xs shadow-[2px_2px_5px_rgba(0,0,0,1)] animate-slide-in-left animation-delay-600" />
-              <h2 className="text-shadow text-2xl xl:text-3xl">
+              <h2 className="text-shadow text-2xl xl:text-2xl">
                 Software Developer
               </h2>
             </div>
 
-            <p className="max-w-105 mt-3 text-secondary animate-fade-in-up animation-delay-800">
+            <p className="max-w-105 mt-3 text-base text-secondary animate-fade-in-up animation-delay-800">
               Building Android apps, full-stack web applications, and embedded
               systems
             </p>
@@ -37,7 +37,7 @@ function Hero() {
               <button className="btn btn--secondary">Github</button>
             </div>
 
-            <div className="flex flex-col gap-3 mt-10">
+            <div className="flex flex-col gap-3 mt-10 text-base">
               {contactIcons.map((item, index) => {
                 const delays = [
                   "animation-delay-1200",

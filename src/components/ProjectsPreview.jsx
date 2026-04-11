@@ -18,7 +18,7 @@ const ProjectsPreview = () => {
           {/* title */}
           <div className="max-w-90">
             <h2 className="text-primary">Projects Preview</h2>
-            <small className="mt-2 text-secondary">
+            <small className="mt-2 text-sm text-secondary">
               Explore my recent work, featuring applications and systems I’ve
               designed and developed.
             </small>
@@ -43,7 +43,7 @@ const ProjectsPreview = () => {
                 </div>
                 {/* lower */}
                 <div className="px-2 py-5 text-white duration-400 group-hover:text-primary group-hover:bg-black/50">
-                  <h6>{project.title}</h6>
+                  <h3 className="text-base">{project.title}</h3>
                   <p className="text-secondary-light text-sm text-start mt-2">{project.description}</p>
                 </div>
               </div>

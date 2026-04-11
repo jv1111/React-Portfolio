@@ -13,7 +13,7 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="md:px-15 py-3 bg-surface shadow sticky top-0 z-30">
+    <header className="md:px-15 py-1 bg-surface shadow sticky top-0 z-30">
       <div className="container">
         <div className="wrapper max-w-350 m-auto">
           <div className="flex justify-between items-center">
@@ -25,7 +25,7 @@ function Header() {
                   className="w-full h-full object-cover rounded-full"
                 />
               </div>
-              <h6 className="text-primary">Jeremy Viterbo</h6>
+              <p className="text-primary text-sm font-medium">Jeremy Viterbo</p>
             </div>
 
             <nav
@@ -39,7 +39,7 @@ function Header() {
                       to={item.to}
                       className={({ isActive }) => {
                         const activeClass = isActive ? "text-primary" : "";
-                        return `group relative transition-colors duration-500 hover:text-primary ${activeClass}`;
+                        return `group relative transition-colors text-sm font-medium duration-500 hover:text-primary ${activeClass}`;
                       }}
                       onClick={() => setIsOpen(false)}
                     >
