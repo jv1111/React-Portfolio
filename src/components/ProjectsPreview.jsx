@@ -52,9 +52,9 @@ const ProjectsPreview = () => {
                   />
                 </div>
                 {/* lower */}
-                <div className="px-2 py-5 text-secondary-light duration-400 group-hover:text-primary group-hover:bg-black/50">
+                <div className="px-2 py-5 text-white duration-400 group-hover:text-primary group-hover:bg-black/50">
                   <h6>{project.title}</h6>
-                  <p>{project.description}</p>
+                  <p className="text-secondary-light text-sm text-start mt-2">{project.description}</p>
                 </div>
               </div>
             ))}

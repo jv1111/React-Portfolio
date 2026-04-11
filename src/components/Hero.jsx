@@ -3,9 +3,9 @@ import { Icon } from "@iconify/react";
 
 function Hero() {
   const contactIcons = [
-    { icon: "mdi:phone", text: "+1 (123) 456-7890" },
-    { icon: "mdi:web", text: "www.jeremy.dev" },
-    { icon: "mdi:email", text: "jeremy@example.com" },
+    { icon: "ic:outline-phone-android", text: "Android Application" },
+    { icon: "fluent-mdl2:website", text: "Web Application" },
+    { icon: "devicon-plain:embeddedc-wordmark", text: "Embedded Systems" },
   ];
 
   return (

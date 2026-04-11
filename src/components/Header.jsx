@@ -13,7 +13,7 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className=" px-16 md:px-15 py-3 bg-surface shadow sticky top-0 z-30">
+    <header className="md:px-15 py-3 bg-surface shadow sticky top-0 z-30">
       <div className="container">
         <div className="wrapper max-w-350 m-auto">
           <div className="flex justify-between items-center">

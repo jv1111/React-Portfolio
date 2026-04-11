@@ -6,7 +6,7 @@ const CTA = () => {
       <div className="container">
         <div className="wrapper flex flex-col gap-2 items-center text-center text-text">
           <h2 className="text-2xl">Get in touch</h2>
-          <p>
+          <p className="text-sm">
             Let’s build innovative solutions together. Get in touch to discuss
             your project.
           </p>

@@ -28,7 +28,7 @@ const Footer = () => {
   return (
     <footer className="px-16 md:px-15 py-5 bg-black text-secondary-light">
       <div className="container">
-        <div className="wrapper flex flex-col lg:flex-row gap-5 items-center justify-between">
+        <div className="wrapper flex flex-col lg:flex-row gap-5 items-center justify-between text-sm">
           {/* Left — Social Icons */}
           <div className="flex flex-row gap-2">
             {socialLinks.map(({ href, label, icon, external }) => (
@@ -49,7 +49,7 @@ const Footer = () => {
           <p>Nagcarlan, Laguna, Philippines</p>
 
           {/* Right — Name */}
-          <p>Juan dela Cruz</p>
+          <p>Jeremy Viterbo</p>
         </div>
       </div>
     </footer>
