@@ -4,9 +4,9 @@ import useIntersectionObserver from "../hooks/useIntersectionObserver";
 import projectsData from "../data/projects.json";
 
 const ProjectsPreview = () => {
-  const projects = projectsData.map(project => ({
+  const projects = projectsData.map((project) => ({
     ...project,
-    image: tempImage
+    image: tempImage,
   }));
 
   const [setRef, visibleStates] = useIntersectionObserver(projects.length);
@@ -44,7 +44,9 @@ const ProjectsPreview = () => {
                 {/* lower */}
                 <div className="px-2 py-5 text-white duration-400 group-hover:text-primary group-hover:bg-black/50">
                   <h3 className="text-base">{project.title}</h3>
-                  <p className="text-secondary-light text-sm text-start mt-2">{project.description}</p>
+                  <p className="text-secondary-light text-sm text-start mt-2">
+                    {project.description}
+                  </p>
                 </div>
               </div>
             ))}

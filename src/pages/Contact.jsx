@@ -5,7 +5,7 @@ function Contact() {
         <h1>Contact</h1>
       </div>
     </section>
-  )
+  );
 }
 
-export default Contact
+export default Contact;

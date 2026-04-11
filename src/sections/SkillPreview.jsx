@@ -45,7 +45,7 @@ const SkillPreview = () => {
 
           <div className="flex items-center justify-start w-full md:w-fit rounded-md md:rounded-none text-secondary bg-secondary-light px-6 py-10 md:py-0 mb-2 md:mb-0">
             <div className="flex flex-col gap-8 mx-auto justify-center">
-              {skillsList.map((skill, index) =>
+              {skillsList.map((skill, index) => (
                 <div key={skill.category} className="flex flex-col gap-1">
                   <h3 className="text-sm font-bold">{skill.category}</h3>
                   <div className="flex flex-wrap gap-2">
@@ -59,7 +59,7 @@ const SkillPreview = () => {
                     <div className="w-full h-px bg-secondary-surface/20 mt-2 rounded-full" />
                   )}
                 </div>
-              )}
+              ))}
             </div>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from "react";
 
 const useIntersectionObserver = (numItems, threshold = 0.25) => {
   const refs = useRef([]);
@@ -15,7 +15,7 @@ const useIntersectionObserver = (numItems, threshold = 0.25) => {
           }
         });
       },
-      { threshold }
+      { threshold },
     );
 
     refs.current.forEach((el) => el && observer.observe(el));

@@ -5,7 +5,7 @@ function Projects() {
         <h1>Projects</h1>
       </div>
     </section>
-  )
+  );
 }
 
-export default Projects
+export default Projects;

@@ -4,7 +4,7 @@
   --color-primary: #ff6600;
   --color-primary-darker: #ba3b00;
   --color-secondary: #484848;
-  --color-bg-darker: #ECECEC;
+  --color-bg-darker: #ececec;
   --color-text: #000000;
   --color-surface: #faf9f5;
   --color-secondary-light: #ededed;
@@ -23,7 +23,6 @@
   h2 {
     @apply text-2xl xl:text-3xl;
   }
-
 }
 
 @layer components {
@@ -53,7 +52,7 @@
     text-shadow: 0px 1px 3px var(--color-text);
   }
 
-  .text-shadow-white{
+  .text-shadow-white {
     text-shadow: 1px 2px 0px rgba(255, 255, 255, 0.8);
   }
 
