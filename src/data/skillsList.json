@@ -1,0 +1,26 @@
+[
+  {
+    "category": "Programming Language",
+    "items": ["C#", "Java", "Javascript", "Kotlin"]
+  },
+  {
+    "category": "Web",
+    "items": ["HTML", "CSS", "React.js", "Express.js", ".NET"]
+  },
+  {
+    "category": "Database",
+    "items": ["MySQL", "Firebase"]
+  },
+  {
+    "category": "Tools",
+    "items": ["Git", "Android Studio", "XAMPP"]
+  },
+  {
+    "category": "Embedded",
+    "items": ["Arduino (C++)"]
+  },
+  {
+    "category": "Other Technologies",
+    "items": ["MySQL", "WordPress", "Unity"]
+  }
+]

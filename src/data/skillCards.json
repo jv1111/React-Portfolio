@@ -1,0 +1,17 @@
+[
+  {
+    "icon": "material-symbols:android",
+    "title": "Android Development",
+    "description": "I build Android applications using Android Studio with Kotlin and Java, creating responsive and user-friendly mobile apps with API and database integration."
+  },
+  {
+    "icon": "mdi:web",
+    "title": "Web Development",
+    "description": "I build full-stack web applications using modern frameworks and tools, creating responsive and user-friendly digital experiences with API and database integration."
+  },
+  {
+    "icon": "mdi:chip",
+    "title": "Embedded Systems",
+    "description": "I build embedded systems projects using microcontrollers and low-level programming, creating efficient and reliable solutions with hardware and software integration."
+  }
+]

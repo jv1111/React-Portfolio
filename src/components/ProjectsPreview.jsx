@@ -1,28 +1,13 @@
 import React from "react";
 import tempImage from "../assets/profile.webp";
 import useIntersectionObserver from "../hooks/useIntersectionObserver";
+import projectsData from "../data/projects.json";
 
 const ProjectsPreview = () => {
-  const projects = [
-    {
-      title: "Math Commanders",
-      description:
-        "Educational 3D math game built in Unity C# for Grade 5 students. Designed to make learning interactive.",
-      image: tempImage,
-    },
-    {
-      title: "Math Commanders",
-      description:
-        "Educational 3D math game built in Unity C# for Grade 5 students. Designed to make learning interactive.",
-      image: tempImage,
-    },
-    {
-      title: "Math Commanders",
-      description:
-        "Educational 3D math game built in Unity C# for Grade 5 students. Designed to make learning interactive.",
-      image: tempImage,
-    },
-  ];
+  const projects = projectsData.map(project => ({
+    ...project,
+    image: tempImage
+  }));
 
   const [setRef, visibleStates] = useIntersectionObserver(projects.length);
 

@@ -1,54 +1,8 @@
 import React from "react";
 import { Icon } from "@iconify/react";
 import useIntersectionObserver from "../hooks/useIntersectionObserver";
-
-const skillCards = [
-  {
-    icon: "material-symbols:android",
-    title: "Android Development",
-    description:
-      "I build Android applications using Android Studio with Kotlin and Java, creating responsive and user-friendly mobile apps with API and database integration.",
-  },
-  {
-    icon: "mdi:web",
-    title: "Web Development",
-    description:
-      "I build full-stack web applications using modern frameworks and tools, creating responsive and user-friendly digital experiences with API and database integration.",
-  },
-  {
-    icon: "mdi:chip",
-    title: "Embedded Systems",
-    description:
-      "I build embedded systems projects using microcontrollers and low-level programming, creating efficient and reliable solutions with hardware and software integration.",
-  },
-];
-
-const skillsList = [
-  {
-    category: "Programming Language",
-    items: ["C#", "Java", "Javascript", "Kotlin"],
-  },
-  {
-    category: "Web",
-    items: ["HTML", "CSS", "React.js", "Express.js", ".NET"],
-  },
-  {
-    category: "Database",
-    items: ["MySQL", "Firebase"],
-  },
-  {
-    category: "Tools",
-    items: ["Git", "Android Studio", "XAMPP"],
-  },
-  {
-    category: "Embedded",
-    items: ["Arduino (C++)"],
-  },
-  {
-    category: "Other Technologies",
-    items: ["MySQL", "WordPress", "Unity"],
-  },
-];
+import skillCards from "../data/skillCards.json";
+import skillsList from "../data/skillsList.json";
 
 const SkillPreview = () => {
   const [setRef, visibleStates] = useIntersectionObserver(skillCards.length);
