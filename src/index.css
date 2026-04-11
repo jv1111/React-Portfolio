@@ -31,7 +31,7 @@
   }
 
   .wrapper {
-    @apply max-w-320 mx-auto;
+    @apply max-w-7xl mx-auto;
   }
 
   .btn {

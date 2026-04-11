@@ -13,7 +13,7 @@ function Hero() {
       <div className="container">
         <div className="wrapper grid items-center text-center md:text-left md:grid-cols-2">
           <div className="flex flex-col items-center justify-center md:h-auto md:items-start md:justify-start md:order-1 order-2">
-            <h1 className="animate-fade-in-up text-3xl md:text-3xl xl:text-5xl xl:text-start">
+            <h1 className="animate-fade-in-up text-3xl lg:text-5xl xl:text-6xl xl:text-start">
               <span className="text-shadow text-text">Hi I'm </span>
               <span className="text-primary text-shadow animate-fade-in-up animation-delay-200">
                 Jeremy
