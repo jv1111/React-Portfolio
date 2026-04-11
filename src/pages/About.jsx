@@ -1,9 +1,7 @@
-import { AboutBanner } from "../components"
+import { AboutBanner } from "../sections";
 
 function About() {
-  return (
-    <AboutBanner />
-  )
+  return <AboutBanner />;
 }
 
-export default About
+export default About;

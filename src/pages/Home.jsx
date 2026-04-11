@@ -1,4 +1,4 @@
-import { Hero, SkillPreview, ProjectsPreview, CTA } from "../components";
+import { Hero, SkillPreview, ProjectsPreview, CTA } from "../sections";
 
 function Home() {
   return (
