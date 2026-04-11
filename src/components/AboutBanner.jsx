@@ -2,10 +2,11 @@ import React from 'react'
 import aboutBanner from "../assets/about_banner.webp"
 
 const AboutBanner = () => {
+
     return (
         <section className="relative bg-black px-16 md:px-15">
             <img src={aboutBanner} alt="about banner" className='absolute left-0 h-screen w-[50vw] object-cover z-1' />
-            <div className="relative container z-10">
+            <div className="container relative z-10">
                 <div className="wrapper h-screen grid md:grid-cols-2 gap-10 py-16 md:py-10">
                     <div>
                         <p className='text-secondary-light text-sm'>About -&gt; Skills -&gt; Tech Stack -&gt; Education</p>
