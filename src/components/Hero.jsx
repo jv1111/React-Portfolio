@@ -27,10 +27,10 @@ function Hero() {
               </h2>
             </div>
 
-            <h6 className="max-w-105 mt-3 text-secondary animate-fade-in-up animation-delay-800">
+            <p className="max-w-105 mt-3 text-secondary animate-fade-in-up animation-delay-800">
               Building Android apps, full-stack web applications, and embedded
               systems
-            </h6>
+            </p>
 
             <div className="flex gap-4 mt-10 animate-fade-in-up animation-delay-1000">
               <button className="btn btn--primary">Resume</button>
