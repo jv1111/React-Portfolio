@@ -16,9 +16,9 @@ const AboutBanner = () => {
             About -&gt; Skills -&gt; Tech Stack -&gt; Education
           </p>
         </div>
-        <div className="wrapper h-screen grid md:grid-cols-2 md:gap-10 items-center justify-center md:items-start text-center md:text-start py-16 md:py-10">
+        <div className="wrapper h-screen grid md:grid-cols-2 md:gap-10 items-center justify-center text-center md:text-start py-16 md:py-10">
           <div className="hidden md:block" />
-          <div className="flex items-center justify-centergap-2 md:justify-end md:mt-16 md:p-20">
+          <div className="flex items-center justify-center gap-2 md:justify-end md:p-20">
             <div className="flex flex-col gap-2 items-center justify-center text-center md:items-start md:justify-start md:text-left">
               <h1 className="text-3xl md:text-5xl text-primary text-shadow-white animate-fade-in-up">
                 About Me
