@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Android App Development",
+    "description": "I am passionate about building applications that solve real-world problems. I build Android apps, full-stack web applications, and embedded systems using a variety of frameworks and tools. I enjoy exploring different technologies, tackling technical challenges, and continuously growing my skills as a software developer.",
+    "image": "android",
+    "technologies": ["Java", "Kotlin", "Android Studio"]
+  },
+  {
+    "title": "Web Development",
+    "description": "Build full-stack web applications using React.js for the frontend, with either Express.js or .NET for backend development. Also create and customize websites using WordPress. Focus on developing responsive user interfaces, efficient backend systems, and scalable web solutions.",
+    "image": "website",
+    "technologies": ["HTML", "CSS", "JavaScript", "C#", "React.js", "Express.js", ".NET"]
+  },
+  {
+    "title": "Embedded System",
+    "description": "Build embedded systems using microcontrollers such as Arduino and ESP-based devices, utilizing tools like Arduino IDE and ESP-IDF. Develop firmware to control hardware components, process data, and enable system functionality. Focus on creating efficient, reliable, and optimized solutions for real-world applications.",
+    "image": "embedded",
+    "technologies": ["Arduino", "C++"]
+  }
+]

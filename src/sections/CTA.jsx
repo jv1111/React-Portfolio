@@ -10,9 +10,7 @@ const CTA = () => {
             Let’s build innovative solutions together. Get in touch to discuss
             your project.
           </p>
-          <button className="btn bg-black border text-white duration-400 hover:border-primary hover:text-primary">
-            CONTACT
-          </button>
+          <button className="btn btn--dark">CONTACT</button>
         </div>
       </div>
     </section>

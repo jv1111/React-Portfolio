@@ -16,12 +16,8 @@
     @apply font-serif bg-surface text-text;
   }
 
-  h1 {
-    @apply md:text-5xl xl:text-6xl font-bold;
-  }
-
   h2 {
-    @apply text-2xl xl:text-3xl;
+    @apply text-2xl lg:text-3xl;
   }
 }
 
@@ -44,6 +40,10 @@
 
   .btn--secondary {
     @apply border border-secondary bg-transparent text-secondary duration-400 hover:bg-secondary hover:text-primary hover:border-primary hover:shadow-lg;
+  }
+
+  .btn--dark {
+    @apply bg-black border border-white text-white shadow shadow-black duration-400 hover:border-primary hover:text-primary;
   }
 }
 

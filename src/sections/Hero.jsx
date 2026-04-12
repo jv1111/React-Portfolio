@@ -1,5 +1,6 @@
 import profileImage from "../assets/profile.webp";
 import { Icon } from "@iconify/react";
+import BarDivider from "../components/BarDivider";
 
 function Hero() {
   const contactIcons = [
@@ -21,7 +22,10 @@ function Hero() {
             </h1>
 
             <div className="flex flex-col xl:flex-row items-center md:items-start xl:items-center gap-4 mt-3 animate-fade-in-up animation-delay-400">
-              <div className="bg-text border-2 border-primary h-2.5 w-45 rounded-xs shadow-[2px_2px_5px_rgba(0,0,0,1)] animate-slide-in-left animation-delay-600" />
+              <BarDivider
+                variant="dark"
+                className="animate-slide-in-left animation-delay-600"
+              />
               <h2 className="text-shadow text-2xl xl:text-2xl">
                 Software Developer
               </h2>
