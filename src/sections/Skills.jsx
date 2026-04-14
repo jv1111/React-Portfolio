@@ -4,8 +4,11 @@ import skillsPackage from "../data/skillsPackage.json";
 import androidImg from "../assets/android.webp";
 import websiteImg from "../assets/website.webp";
 import embeddedImg from "../assets/embedded.webp";
+import useIntersectionObserver from "../hooks/useIntersectionObserver";
 
 const Skills = () => {
+  const [setRef, visibleStates] = useIntersectionObserver(skillsPackage.length);
+
   const imageMap = {
     android: androidImg,
     website: websiteImg,
@@ -28,7 +31,12 @@ const Skills = () => {
               return (
                 <div
                   key={index}
-                  className={`grid grid-cols-1 lg:grid-cols-2 gap-8 items-center justify-center`}
+                  className={`grid grid-cols-1 lg:grid-cols-2 gap-8 items-center justify-center transition-opacity duration-1000 opacity-0 ${
+                    visibleStates[index] &&
+                    `opacity-100 ${index > 0 && `animation-delay-${index * 200}`}`
+                  }`}
+                  ref={setRef(index)}
+                  data-index={index}
                 >
                   {/* Text side */}
                   <div
