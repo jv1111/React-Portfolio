@@ -1,11 +1,10 @@
 import { AboutBanner, Education, Skills, TechStack } from "../sections";
-import useScrollObserver from "../hooks/useScrollObserver";
+import { AboutSectionNav } from "../components";
 
 function About() {
-  const isScrolling = useScrollObserver();
-
   return (
-    <div className="flex flex-col">
+    <div className="relative flex flex-col">
+      <AboutSectionNav />
       <AboutBanner />
       <Skills />
       <TechStack />

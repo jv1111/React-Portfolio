@@ -10,12 +10,7 @@ const AboutBanner = () => {
         alt="about banner"
         className="absolute left-0 h-screen w-[50vw] object-cover z-1 hidden md:block"
       />
-      <div className="container relative z-10">
-        <div className="fixed top-25 left-1/2 -translate-x-1/2 z-20 bg-[#331400] border border-primary w-fit px-2 py-1 rounded-full shadow shadow-primary md:left-16 md:translate-x-0">
-          <p className="text-secondary-light text-xs">
-            About -&gt; Skills -&gt; Tech Stack -&gt; Education
-          </p>
-        </div>
+      <div className="container">
         <div className="wrapper h-screen grid md:grid-cols-2 md:gap-10 items-center justify-center text-center md:text-start py-16 md:py-10">
           <div className="hidden md:block" />
           <div className="flex items-center justify-center gap-2 md:justify-end md:p-20">

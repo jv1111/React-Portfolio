@@ -1,25 +1,31 @@
 import { useEffect, useState } from "react";
 
 const useScrollObserver = () => {
-  // State that tells us if user is currently scrolling
+  // Tracks if user is actively scrolling
   const [isScrolling, setIsScrolling] = useState(false);
+
+  // Tracks current scroll position (Y axis)
+  const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
     let timeoutId;
 
     const handleScroll = () => {
-      // When user scrolls → set to true
+      // Update scroll position
+      setScrollY(window.scrollY);
+
+      // Mark as scrolling
       setIsScrolling(true);
 
       console.log("scrolling...", window.scrollY);
 
-      // Clear previous timer (prevents flickering)
+      // Reset timer (prevents flicker)
       clearTimeout(timeoutId);
 
-      // If user stops scrolling for 150ms → set to false
+      // After 3 seconds of no scroll → stop scrolling state
       timeoutId = setTimeout(() => {
         setIsScrolling(false);
-      }, 150);
+      }, 1500);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -30,8 +36,8 @@ const useScrollObserver = () => {
     };
   }, []);
 
-  // Return the boolean so components can use it
-  return isScrolling;
+  // Return both values
+  return { isScrolling, scrollY };
 };
 
 export default useScrollObserver;
