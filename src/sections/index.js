@@ -5,3 +5,4 @@ export { default as CTA } from "./CTA";
 export { default as AboutBanner } from "./AboutBanner";
 export { default as Skills } from "./Skills";
 export { default as TechStack } from "./TechStack";
+export { default as Education } from "./Education";
