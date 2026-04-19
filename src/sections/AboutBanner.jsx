@@ -4,7 +4,7 @@ import BarDivider from "../components/BarDivider";
 
 const AboutBanner = () => {
   return (
-    <section className="relative bg-black px-16 md:px-15">
+    <section id="banner" className="relative bg-black px-16 md:px-15">
       <img
         src={aboutBanner}
         alt="about banner"

@@ -6,7 +6,10 @@ const TechStack = () => {
   const [setRef, visibleStates] = useIntersectionObserver(skillsList.length);
 
   return (
-    <section className="bg-secondary-surface text-secondary-light py-16 md:py-15">
+    <section
+      id="tech-stack"
+      className="bg-secondary-surface text-secondary-light py-16 md:py-15"
+    >
       <div className="container">
         <div className="wrapper flex flex-col gap-4">
           <h2 className="text-2xl font-bold">Tech Stack</h2>
