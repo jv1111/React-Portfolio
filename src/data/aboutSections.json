@@ -1,0 +1,6 @@
+[
+  { "label": "Banner", "id": "banner" },
+  { "label": "Skills", "id": "skills" },
+  { "label": "Tech Stack", "id": "tech-stack" },
+  { "label": "Education", "id": "education" }
+]

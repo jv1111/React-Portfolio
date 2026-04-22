@@ -1,18 +1,11 @@
 import React from "react";
 import useScrollObserver from "../hooks/useScrollObserver";
 import useActiveSection from "../hooks/useActiveSection";
-
-const sections = [
-  { label: "Banner", id: "banner" },
-  { label: "Skills", id: "skills" },
-  { label: "Tech Stack", id: "tech-stack" },
-  { label: "Education", id: "education" },
-];
-
-const sectionIds = sections.map((s) => s.id);
+import sections from "../data/aboutSections.json";
 
 const AboutSectionNav = () => {
   const { isScrolling, scrollY } = useScrollObserver();
+  const sectionIds = sections.map((s) => s.id);
   const activeSection = useActiveSection(sectionIds, 0.5);
 
   const handleClick = (id) => {

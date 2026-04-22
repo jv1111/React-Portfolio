@@ -11,8 +11,6 @@ const Education = () => {
     "sti.webp": stiImg,
   };
 
-  //   todo clean up add animation
-
   return (
     <section id="education" className="py-16 md:py-15">
       <div className="container">
