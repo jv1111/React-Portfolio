@@ -8,7 +8,7 @@ const TechStack = () => {
   return (
     <section
       id="tech-stack"
-      className="bg-secondary-surface text-secondary-light py-16 md:py-15"
+      className="bg-secondary-surface text-secondary-light p-16 md:p-15"
     >
       <div className="container">
         <div className="wrapper flex flex-col gap-4">

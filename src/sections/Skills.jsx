@@ -15,7 +15,7 @@ const Skills = () => {
     embedded: embeddedImg,
   };
   return (
-    <section id="skills" className="px-16 py-16 md:py15 md:px-15">
+    <section id="skills" className="p-16 md:p-15">
       <div className="container">
         <div className="wrapper">
           <h2 className="text-primary text-center lg:text-start">Skills</h2>
