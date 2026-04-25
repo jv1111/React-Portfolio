@@ -36,7 +36,7 @@ const HorizontalCard = ({
 
   return (
     <div
-      className={`group flex max-w-130 items-center ${styles.gap} rounded-md border border-white bg-black/50 ${styles.padding} shadow-md duration-400 select-none cursor-pointer hover:-translate-y-1 hover:scale-105 hover:border-primary ${className}`}
+      className={`group flex ${size === 1? 'max-w-115' : 'max-w-130'} items-center ${styles.gap} rounded-md border border-white bg-[#1f1f1f] ${styles.padding} shadow-md duration-400 select-none cursor-pointer hover:-translate-y-1 hover:scale-105 hover:border-primary ${className}`}
       {...props}
     >
       {/* left */}

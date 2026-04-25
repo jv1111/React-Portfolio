@@ -30,16 +30,23 @@ const Project = () => {
                             </div>
                         </div>
                         {/* projects view */}
-                        <div className='flex flex-col gap-2 mt-5'>
-                            {projects.map((project, index) => (
-                                <HorizontalCard
-                                    icon={project.icon}
-                                    title={project.title}
-                                    description={project.description}
-                                    size={1}
-                                    key={project.index}
-                                />
-                            ))}
+                        <div className='flex gap-4 items-center'>
+                            <div className='flex flex-col gap-2 mt-5'>
+                                {projects.map((project, index) => (
+                                    <HorizontalCard
+                                        icon={project.icon}
+                                        title={project.title}
+                                        description={project.description}
+                                        size={1}
+                                        key={project.index}
+                                    />
+                                ))}
+                            </div>
+                            <div className='flex flex-col gap-5'>
+                                <button className='rotate-90 origin-center cursor-pointer hover:text-primary'>prev</button>
+                                <p className='rotate-90 origin-center text-center'>1/5</p>
+                                <button className='rotate-90 origin-center cursor-pointer hover:text-primary'>next</button>
+                            </div>
                         </div>
                     </div>
                 </div>
