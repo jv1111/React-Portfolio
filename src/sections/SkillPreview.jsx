@@ -3,6 +3,7 @@ import { Icon } from "@iconify/react";
 import useIntersectionObserver from "../hooks/useIntersectionObserver";
 import skillCards from "../data/skillCards.json";
 import skillsList from "../data/skillsList.json";
+import HorizontalCard from "../components/HorizontalCard";
 
 const SkillPreview = () => {
   const [setRef, visibleStates] = useIntersectionObserver(skillCards.length);
@@ -18,27 +19,19 @@ const SkillPreview = () => {
             {/* cards container */}
             <div className="flex flex-wrap flex-col gap-10 justify-center items-center md:ps-20 pb-6">
               {skillCards.map((card, index) => (
-                <div
+                <HorizontalCard
                   key={card.title}
                   ref={setRef(index)}
                   data-index={index}
-                  className={`group flex max-w-130 items-center gap-3 rounded-md border border-white bg-black/50 px-2 py-5 shadow-md duration-400 select-none cursor-pointer hover:-translate-y-1 hover:scale-105 hover:border-primary opacity-0 -translate-x-8 ${visibleStates[index] ? `animate-slide-in-left ${index > 0 ? `animation-delay-${index * 200}` : ""}` : ""}`}
-                >
-                  {/* left */}
-                  <div className="flex w-25 h-25 items-center justify-center text-white duration-400 group-hover:text-primary">
-                    <Icon icon={card.icon} width={50} height={50} />
-                  </div>
-                  <div className="h-25 w-1 rounded-sm bg-white duration-400 group-hover:bg-primary" />
-                  {/* right */}
-                  <div className="flex-1 flex flex-col gap-2 justify-center text-start">
-                    <h3 className="text-base text-white duration-400 group-hover:text-primary">
-                      {card.title}
-                    </h3>
-                    <div className="text-sm font-extralight text-secondary-light duration-400 group-hover:text-primary">
-                      <p>{card.description}</p>
-                    </div>
-                  </div>
-                </div>
+                  icon={card.icon}
+                  title={card.title}
+                  description={card.description}
+                  size={1}
+                  className={`opacity-0 -translate-x-8 ${visibleStates[index]
+                      ? `animate-slide-in-left ${index > 0 ? `animation-delay-${index * 200}` : ""}`
+                      : ""
+                    }`}
+                />
               ))}
             </div>
           </div>
