@@ -1,10 +1,10 @@
+import Project from "../sections/Project";
+
 function Projects() {
   return (
-    <section className="py-16">
-      <div className="container">
-        <h1>Projects</h1>
-      </div>
-    </section>
+    <>
+      <Project/>
+    </>
   );
 }
 
